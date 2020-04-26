@@ -1,8 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Corusera Specialization Week 3 - Programming assignment.
+## Create functions that CACHE the Inverse of a matrix.
 
-## Write a short comment describing this function
-
+## --------------------------------------------------------
+## makeCacheMatrix: prepare List function objects. 
+##                  It keeps the passed information becausse 
+##                  of the Lexical Scoping. 
+## --------------------------------------------------------
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL;
   set <- function(y) {
@@ -18,8 +21,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## --------------------------------------------------------
+## makeCacheMatrix: resolve the matrix stored in the makeCacheMatrix object. 
+##                  Set the inverse matrix if it is the first time that is calculated.
+## --------------------------------------------------------
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         matrixinverse <- x$getinverse();
